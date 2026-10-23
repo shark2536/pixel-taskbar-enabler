@@ -56,6 +56,11 @@ public class TaskbarActivator extends XposedModPack {
     @SuppressLint("DiscouragedApi")
     @Override
     public void onPackageLoaded(XposedModuleInterface.PackageReadyParam PRParam) throws Throwable {
+
+        if (!PRParam.getPackageName().equals("com.android.launcher3")) {
+            return;
+        }
+        
         TopTaskTrackerClass = ReflectedClass.ofIfPossible("com.android.quickstep.TopTaskTracker");
 
         List<dev.beyman.pixeltaskbarenabler.xposed.modpacks.launcher.mods.BaseLauncherMod> mods = Arrays.asList(
