@@ -23,7 +23,7 @@ public final class Constants {
 	public static String DEFAULT_PREFS_FILE_NAME = BuildConfig.APPLICATION_ID + "_preferences";
 
 
-	public static final String LAUNCHER_PACKAGE = "com.google.android.apps.nexuslauncher";
+	public static final String LAUNCHER_PACKAGE = "com.android.launcher3";
 	public static final String SYSTEMUI_PACKAGE = "com.android.systemui";
 
 	public static final String LAUNCH_REASON_EXTRA = "LAUNCH_REASON";
