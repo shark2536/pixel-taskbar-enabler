@@ -1,1 +1,7 @@
-<resources></resources>
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="module_scope">
+        <item>com.android.launcher3</item>
+        <item>com.android.systemui</item>
+    </string-array>
+</resources>
